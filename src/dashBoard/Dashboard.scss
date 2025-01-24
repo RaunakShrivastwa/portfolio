@@ -1,0 +1,91 @@
+@import "../styles.scss";
+
+.dashboard_con {
+  background: var(--bg-gradient);
+  background: var(--bg);
+  height: 100vh;
+  @include flex("", "", "", 10, 10);
+  overflow-y: auto !important;
+
+  .side_large {
+    min-width: rem(260);
+    max-width: rem(260);
+  }
+
+  .Dbody {
+    max-height: 100vh;
+    overflow-y: auto;
+
+    nav {
+      background-color: var(--header1);
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    }
+
+
+    .iframe {
+      background-color: var(--form-bg);
+      position: relative;
+
+      .eye {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+      }
+    }
+
+    .profile_container {
+      overflow-x: auto !important;
+      background-color: var(--card-bg);
+      color: var(--textColor);
+
+      &::-webkit-scrollbar {
+        display: none !important;
+        /* Set scrollbar width */
+      }
+    }
+
+
+    .Dbody_profile {
+      height: 100px;
+      min-width: rem(768);
+    }
+
+    .Dbody_footer {
+      height: 50px;
+      background-color: var(--card-bg);
+    }
+  }
+
+  .offcanvas-sidebar {
+    &.offcanvas-start {
+      min-width: rem(270) !important;
+      max-width: rem(270) !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      background-color: transparent !important;
+      border: none;
+
+      .offcanvas-body {
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        border: none !important;
+      }
+    }
+  }
+}
+
+@include width-range(rem(0), $tablet) {
+  .wizard_con {
+    flex-wrap: wrap !important;
+  }
+
+  .Dbody {
+    gap: rem(20) !important;
+  }
+}

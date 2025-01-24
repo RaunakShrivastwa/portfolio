@@ -1,0 +1,66 @@
+@import "../../../styles.scss";
+
+@import "~bootstrap/scss/bootstrap";
+
+.work-view {
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--bg-gradient);
+  background: var(--bg);
+  color: var(--textColor);
+  // padding: 10px 120px;
+
+
+  .section {
+    padding: 10px 10px;
+    background-color: transparent;
+    color: var(--textColor);
+
+    h2 {
+      color: var(--pink);
+    }
+  }
+
+  .icon-group {
+    svg {
+      margin: 0 1rem;
+      color: var(--pink)
+    }
+  }
+
+  .project-card {
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-links {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+
+      .icon-link {
+        color: #007bff;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: #0056b3;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}

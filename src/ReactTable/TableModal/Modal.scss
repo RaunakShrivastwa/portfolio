@@ -1,0 +1,59 @@
+@import "../../styles.scss";
+
+.user_table {
+  border-radius: rem(6);
+
+  .offcanvas-header {
+    background-color: lightblue;
+  }
+
+  .offcanvas-body {
+    height: 100%;
+    padding: rem(20) rem(16);
+
+    .wrapper {
+      width: 100%;
+      overflow-y: auto;
+      padding: rem(40) rem(16);
+      @include flex('', center, column);
+
+      img {
+        @include setDimension(rem(100), rem(100));
+        border-radius: 50%;
+        padding: rem(16);
+        border: 1px solid rgb(210, 205, 205);
+        box-shadow: 10px 3px 3px 2px rgb(237, 233, 233);
+      }
+
+      .social_link {
+        @include flex(center, center, "", 10);
+        border: none;
+
+        a {
+          color: unset;
+          @include flex(center, center, "", 10);
+          @include setDimension(rem(40), rem(40));
+          border-radius: 50%;
+
+          &.fb {
+            color: var(--white);
+            background-color: #4267b2;
+          }
+
+          &.twitter {
+            color: var(--white);
+            background-color: black;
+          }
+
+          &.linkedin {
+            color: var(--white);
+            background-color: #4267b2;
+          }
+
+        }
+      }
+
+
+    }
+  }
+}

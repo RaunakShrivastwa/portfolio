@@ -1,0 +1,89 @@
+@import '../Function';
+@import '../mixing';
+
+.f12 {
+    font-size: rem(12) !important;
+}
+.f11{
+    font-size: rem(11) !important;
+}
+.f9 {
+    font-size: rem(9);
+}
+.f14 {
+    font-size: rem(14) !important;
+}
+
+.f15 {
+    font-size: rem(15);
+}
+
+.f16 {
+    font-size: rem(16) !important;
+}
+.f17 {
+    font-size: rem(17);
+}
+
+.f18 {
+    font-size: rem(18);
+}
+.f19 {
+    font-size: rem(19) !important;
+}
+
+.f20 {
+    font-size: rem(20);
+}
+
+.f22 {
+    font-size: rem(22);
+}
+
+.f24 {
+    font-size: rem(24);
+}
+
+.f26 {
+    font-size: rem(26);
+}
+
+.f28 {
+    font-size: rem(28);
+    cursor: pointer;
+}
+
+.f30 {
+    font-size: rem(30) !important;
+}
+
+.f60{
+    font-size: rem(60);
+}
+
+.f38 {
+    font-size: rem(38);
+}
+
+.f40{
+    font-size: rem(40);
+}
+
+// for the icons
+.i24 {
+    @include setDimension(rem(18), rem(18));
+    @include flex(center, center, "", 0, 0);
+}
+.i11 {
+    @include setDimension(rem(11), rem(11));
+    @include flex(center, center, "", 0, 0);
+}
+.i20 {
+    @include setDimension(rem(15), rem(15));
+    @include flex(center, center, "", 0, 0);
+}
+
+.i30 {
+    @include setDimension(rem(30), rem(30));
+    @include flex(center, center, "", 0, 0);
+}

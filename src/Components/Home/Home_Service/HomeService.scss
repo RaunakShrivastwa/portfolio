@@ -1,0 +1,140 @@
+@import "../../../styles.scss";
+
+.service_container {
+    width: 100%;
+
+    .phone {
+        height: 500px;
+        min-width: 290px;
+        max-width: 290px;
+        background-color: rgba(0, 0, 0, 0.566);
+        filter: drop-shadow(rem(5) rem(6) rem(6) rgba(238, 112, 8, 0.585));
+        margin-bottom: 20px;
+        padding: rem(10);
+        position: relative;
+        &:hover {
+            transition: all ease-in-out 0.8s;
+            transform: rotate(0deg);
+        }
+
+        .mob_header {
+            @include setDimension(100%, 100%);
+            background-color: rgb(255, 13, 13);
+            position: relative;
+            @include flex(center, center, column, 0, 0);
+
+            .mid_camara {
+                height: 40px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                color: var(--white);
+                position: relative;
+
+                .wifi {
+                    transform: rotate(135deg);
+                }
+
+                .mid_c {
+                    position: absolute;
+                    @include setDimension(rem(120), rem(20));
+                    border-radius: 28px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(24, 23, 23, 0.595);
+                    z-index: 10;
+                    &:after {
+                        position: absolute;
+                        width: 90px;
+                        height: 4px;
+                        content: "";
+                        background-color: var(--textColor-200);
+                    }
+                }
+            }
+
+            .screen {
+                background-color: black;
+                flex-grow: 1;
+                width: 100%;
+            }
+            .buttons {
+                @include flex(center, end, "", 30, 0);
+                height: 40px;
+                width: 100%;
+                background-color: black;
+                span {
+                    width: 40px;
+                    height: 3px;
+                    background-color: var(--textColor-200);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .card1 {
+        margin-bottom: rem(20);
+        flex-grow: 1;
+        // @include flex(center, "", "", 40, 0);
+        padding: 0 10px 10px 10px;
+        // flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        grid-template-rows: repeat(1,2fr);
+        gap: rem(40);
+
+        .card_items {
+            height: rem(200);
+            flex-grow: 1;
+            background-color: var(--card-bg);
+            filter: drop-shadow(rem(5) rem(5) rem(5) var(--card-shadow));
+            @include flex(center,center,column,10,10);
+            color: var(--textColor);
+            &:hover{
+                transition: all ease-in-out 0.5s;
+                background-color: var(--card-bg);
+                opacity: 0.4;
+            }
+            img{
+                width: 50px;
+            }
+            p{
+                font-size: rem(22);
+                font-weight: 500;
+            }
+        }
+    }
+
+    .items {
+        flex-grow: 1;
+        height: 300px;
+        background-color: lightcoral;
+        padding: 0 rem(195) 0 100px;
+    }
+}
+
+.service_text {
+    margin-left: 60px;
+    color: var(--textColor) !important;
+    margin-bottom: 0 !important;
+    filter: drop-shadow(rem(5) rem(5) rem(5) var(--text-shadow));
+}
+
+@include width-range(0px, $tablet) {
+    .service_container {
+       .card1{
+        grid-template-columns: repeat(2,2fr) !important;
+       }
+    }
+}
+@include width-range(0px, $landscape) {
+    .service_container {
+       .card1{
+        grid-template-columns: repeat(1,2fr) !important;
+       }
+    }
+}

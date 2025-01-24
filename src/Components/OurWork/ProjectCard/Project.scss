@@ -1,0 +1,70 @@
+@import "../../../styles.scss";
+
+.m_container {
+  height: 100%;
+  display: grid;
+  background: var(--bg-gradient);
+  background: var(--bg);
+  grid-template-rows: repeat(1, 2fr);
+  grid-template-columns: repeat(3, 2fr);
+  gap: 60px;
+  overflow-y: auto;
+  padding: 30px 30px;
+  margin-right: 6px;
+}
+
+.project {
+  height: 260px;
+  @include flex(space-between, center, column, 0, 0);
+  .project_img {
+    @include setDimension(100%, rem(150));
+    background-color: lightcoral;
+    position: relative;
+    border-radius: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .project_disc {
+    @include setDimension(100%, rem(100));
+    background-color: lightblue;
+    border: none;
+    strong {
+      font-weight: 600;
+      @include textTruncate(rem(250));
+    }
+    span {
+      color: var(--black) !important;
+    }
+    z-index: 10;
+    border-radius: 10px;
+  }
+
+  .span1 {
+    border-right: 10px solid var(--card-border);
+    border-top: 10px solid var(--card-border);
+    border-bottom: 0;
+    position: absolute;
+    background-color: lightblue;
+    left: 0;
+    bottom: 0px;
+    width: 89px;
+    height: 157px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+  }
+}
+
+@include width-range(0, $tablet) {
+  .m_container {
+    grid-template-columns: repeat(1, 2fr) !important;
+  }
+}
+
+@include width-range(0, $desktop) {
+  .m_container {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}

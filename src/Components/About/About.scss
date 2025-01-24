@@ -1,0 +1,150 @@
+@import "../../styles.scss";
+
+.about-us-page {
+  background: var(--bg-gradient);
+  background: var(--bg);
+  color: var(--textColor);
+  .list-group-flush li {
+    color: var(--textColor) !important;
+  }
+}
+
+.banner {
+  padding: 80px 0;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.service-card {
+    background-color: transparent !important;
+    color: var(--textColor);
+  .team-card {
+    transition: transform 0.3s ease-in-out;
+    background: var(--bg-gradient);
+    background: var(--bg);
+    color: var(--textColor) !important;
+  }
+}
+.card_body_team{
+    background-color: var(--card-bg);
+    color: var(--textColor);
+    h5{
+        color: var(--textColor);
+        font-weight: 600;
+    }
+    // p{
+    //     color: var(--pink);
+    // }
+}
+
+.why_choose_lets_work {
+  color: var(--textColor);
+}
+
+.service-card:hover,
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card .icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #007bff;
+}
+
+.team-card{
+  color: var(--textColor) !important;
+}
+
+.team-card .avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: var(--pink);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 0;
+}
+
+.list-group-item::before {
+  content: "✓";
+  color: #28a745;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.team_desc {
+  max-height: 40px !important;
+  min-height: 40px !important;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.sso {
+  a {
+    text-decoration: none;
+    color: var(--white) !important;
+    position: relative;
+    @include setDimension(rem(40), rem(40));
+    padding: rem(10);
+    z-index: 2;
+    border-radius: 50%;
+    @include flex(center, center, "", 0, 0);
+    animation: iconMove 1.5s infinite ease-in-out;
+    &:after {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: var(--pink);
+      content: "";
+      z-index: -1;
+    }
+  }
+}
+
+.why_card{
+  background-color: var(--card-bg);
+   h3{
+    color: var(--textColor);
+   }
+  .list-group-item{
+    background-color: transparent !important;
+  }
+}

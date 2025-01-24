@@ -1,0 +1,13 @@
+@import '../../../styles.scss';
+
+.testimonial_h2{
+    color: red !important;
+}
+
+.testimonial_body{
+    background-color: var(--card-bg) !important;
+    
+    .card-body{
+        color: var(--textColor) !important;
+    }
+}

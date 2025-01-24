@@ -1,0 +1,60 @@
+@import '../../../styles.scss';
+
+.project_con ul {
+    overflow-x: auto !important;
+    border: none !important;
+
+    li {
+        min-width: rem(160);
+        border: none !important;
+
+        &.profile_list {
+            .radio {
+                @include setDimension(rem(20), rem(20));
+                border-radius: 50%;
+                position: relative;
+                background-color: var(--bg-gradient);
+                z-index: 2;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                &.done {
+                    background-color: green;
+                  }
+                
+                  &.proccessing {
+                    background-color: var(--bg-gradient);
+                    border: 6px solid var(--green);
+                  }
+                
+                  &.pending {
+                    z-index: 3;
+                    background-image: url('https://cdn-icons-png.flaticon.com/128/11560/11560347.png');
+                  }
+
+
+            }
+        }
+    }
+}
+
+
+@include width-range(rem(0), $tablet) {
+    .project_con {
+        padding: unset !important;
+        margin-bottom: rem(20);
+
+        ul {
+            padding: 5px !important;
+        }
+    }
+
+    .project_con ul .p_info {
+        flex-grow: 1 !important;
+    }
+}
+
+.project_con ul::-webkit-scrollbar {
+    display: none !important;
+    /* Set scrollbar width */
+}

@@ -1,0 +1,78 @@
+/* Custom CSS for the table component */
+.table-container {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table-responsive {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Make the header sticky */
+.table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  z-index: 1;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Search bar styling */
+.search-container {
+  position: relative;
+  //   margin-bottom: 1rem;
+}
+
+.search-input {
+  padding-right: 40px;
+  border-radius: 0.375rem;
+}
+
+.search-icon {
+  color: #6c757d;
+}
+
+/* Table row hover effect */
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+  cursor: pointer;
+}
+
+/* Custom scrollbar */
+.table-responsive::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table-responsive {
+    max-height: 400px; /* Slightly smaller on mobile */
+  }
+
+  .table td,
+  .table th {
+    white-space: nowrap;
+  }
+}
+
+.table_client {
+  .input-group {
+    width: 300px !important;
+  }
+}

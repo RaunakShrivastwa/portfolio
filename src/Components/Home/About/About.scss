@@ -1,0 +1,94 @@
+@import "../../../styles.scss";
+.about_container {
+  @include flex("", "", "", 60, 0);
+  padding: 0 rem(100) 0 100px;
+  min-height: 100vh;
+  // flex-wrap: wrap;
+
+  .about_img {
+    flex-grow: 1;
+    max-width: rem(500);
+    min-width: rem(500);
+  }
+  .about_text {
+    flex-grow: 1;
+    @include flex("", "", column, 20, 10);
+    // max-width: rem(500);
+    color: var(--textColor);
+    p {
+      font-weight: 400;
+    }
+
+    .about_btn {
+      width: rem(170);
+      filter: drop-shadow(rem(5) rem(5) rem(5) rgba(196, 238, 8, 0.585));
+      color: var(--pink);
+      font-weight: 400;
+    }
+
+    .get_in_touch_btn {
+      width: rem(170);
+      padding: rem(6) rem(20);
+      background: linear-gradient(to right, #f58529, #f77737, #d62976, #962fbf);
+      color: var(--white);
+    }
+  }
+}
+
+@include width-range(0, $desktop) {
+  .about_container {
+    padding: 0 !important;
+    .about_img {
+      min-width: 300px !important;
+    }
+  }
+}
+
+@include width-range(0, $large) {
+  .about_container {
+    padding: 0 !important;
+    .about_text {
+      p {
+        font-size: rem(16);
+      }
+    }
+    .about_img {
+      min-width: 300px !important;
+    }
+  }
+}
+
+@include width-range(0, $tablet) {
+  .about_container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 !important;
+    padding: 0 !important;
+    .about_text {
+      padding: 0 rem(10) 0 10px !important;
+      p {
+        font-size: rem(16);
+      }
+    }
+    .about_img {
+      min-width: 300px !important;
+    }
+  }
+}
+@include width-range(0, $mobile) {
+  .about_container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 !important;
+    padding: 0 !important;
+    .about_text {
+      padding: 0 !important;
+      p {
+        font-size: rem(16);
+      }
+    }
+    .about_img {
+      min-width: 300px !important;
+    }
+  }
+}

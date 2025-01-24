@@ -1,0 +1,12 @@
+@import "../../styles.scss";
+
+.client_container {
+  @include flex("", '', column, 0, 0);
+  // padding: rem(71) rem(100) 0 100px;
+  max-height: 100vh;
+  min-height: 100vh;
+  padding: rem(100) 0;
+  background: var(--bg-gradient);
+  background: var(--bg);
+  overflow-y: auto;
+}

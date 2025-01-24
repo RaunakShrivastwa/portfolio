@@ -1,0 +1,70 @@
+@import "../../styles.scss";
+
+.Blog_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--textColor);
+
+  .read_blog {
+    background-color: var(--pink);
+    color: var(--white);
+    height: 50px;
+  }
+
+  .body_blog {
+    display: grid;
+    grid-template-rows: repeat(1, 2fr);
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+
+    .items {
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      color: var(--textColor);
+      background-color: var(--header);
+    //   background-color: lightcoral;
+      .blog_img {
+        min-height: 250px;
+        width: 100%;
+      }
+      .more {
+        color: var(--pink);
+        align-self: start !important;
+      }
+      .title_blog {
+        height: auto;
+      }
+      small {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+@include width-range(0px, $large) {
+     .Blog_container{
+        .body_blog{
+            grid-template-columns: repeat(2, 2fr);
+        }
+     }
+}
+
+
+@include width-range(0px, $tablet) {
+    .Blog_container{
+        button{
+            height: 40px !important;
+        }
+       .body_blog{
+           grid-template-columns: repeat(1, 2fr);
+       }
+    }
+}

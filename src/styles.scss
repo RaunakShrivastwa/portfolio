@@ -1,0 +1,95 @@
+@import "./Scss/Base/index.scss";
+@import "./Scss/Function";
+@import "./Scss//mixing";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway+Dots&display=swap");
+
+$mobile: rem(360);
+$landscape: rem(600);
+$tablet: rem(768);
+$large: rem(1024);
+$desktop: rem(1280);
+$mediaDesktop: rem(1400);
+$largeDesktop: rem(1920);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Lato Alternates", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.box_shadow {
+  box-shadow: 0 rem(1) rem(3) var(--inline-shadow),
+    0 rem(1) rem(2) var(--outline-shadow),
+    0 rem(4) rem(6) var(--strongly-shadow);
+}
+p {
+  margin: 0 !important;
+}
+
+.custome_radius {
+  border-radius: rem(28) !important;
+}
+
+::-webkit-scrollbar {
+  background-color: gray;
+  @include setDimension(rem(6), rem(1));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(45, 44, 44);
+  border-radius: 10px;
+}
+
+input,
+textarea,
+select,
+option {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.custome_border {
+  border: 1px solid rgba(188, 188, 188, 0.658);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.error {
+  input,
+  input:focus {
+    border: 2px solid var(--red);
+    color: var(--red);
+    &::placeholder {
+      color: var(--red);
+    }
+  }
+  small {
+    color: var(--red);
+    @include textTruncate(rem(400));
+  }
+}
+
+.confirm{
+  input{
+    border: 1px solid green !important;
+  }
+}
+
+.modal-backdrop{
+  position: relative !important;
+}
+
+.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }

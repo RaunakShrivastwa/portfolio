@@ -1,0 +1,50 @@
+@import '../styles.scss';
+
+.status_update{
+
+    .modal-header{
+        background-color: var(--white);
+    }
+     input[type='radio']{
+        min-width: rem(20);
+        min-height: rem(20);
+     }
+    .modal-body{
+         background: linear-gradient(135deg, var(--bs-green), var(--bs-teal));
+    }
+    .label{
+        width: 140px;
+    }
+}
+
+.wizard_status_modal{
+    form{
+        color: var(--white);
+    }
+}
+
+.wizard_status_modal {
+  .form-row {
+    .form-control {
+      flex: 1;
+    }
+
+    .btn {
+      white-space: nowrap;
+      height: 50px !important;
+    }
+
+    .checkbox-group {
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+          display: none !important;
+          /* Set scrollbar width */
+        }
+      margin-top: 0.5rem; // Add spacing below the input field and button
+      label{
+        min-width: 100px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,62 @@
+@import "./Function.scss";
+@import "./Base/variables";
+
+@mixin flex($justify:start, $align:start, $direction:row, $gap:0, $padding:0) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: rem($gap);
+  padding: rem($padding);
+}
+
+@mixin font($fs, $fw, $lineH) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lineH;
+}
+
+@mixin setDimension($width, $height) {
+  width: $width !important;
+  height: $height !important;
+}
+
+@mixin hover($radius, $bg, $textColor: $textColor) {
+  border-radius: $radius;
+  background-color: $bg;
+  color: $textColor;
+}
+
+@mixin customize_radius($radius, $bg, $textColor: $textColor) {
+  border-radius: $radius;
+  background-color: $bg;
+  color: $textColor;
+}
+
+@mixin rounded_image($width, $height) {
+  width: rem($width);
+  height: rem($height);
+  border-radius: 50%;
+}
+
+@mixin textTruncate($max-width) {
+  max-width: $max-width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin lineClamp($max-height, $showline) {
+  max-height: $max-height !important;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: $showline !important;
+  -webkit-box-orient: vertical !important;
+  text-overflow: ellipsis !important;
+}
+
+@mixin width-range($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

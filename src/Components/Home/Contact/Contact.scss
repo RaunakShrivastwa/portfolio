@@ -1,0 +1,86 @@
+@import "../../../styles.scss";
+
+.contact_container {
+  min-height: 100vh;
+//   background-color: lightcoral;
+  @include flex(center, center, "", 20, 20);
+  h2{
+    color: var(--textColor);
+  }
+
+  .left{
+    flex-grow: 1;
+    background-color: var(--header);
+    max-height: 600px;
+    .right{
+        min-width: 100px;
+    }
+    .form-control1 {
+        width: 100%;
+      height: rem(50);
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      input,
+      select {
+        display: flex;
+        height: 100%;
+        border: none;
+        background-color: var(--form-bg);
+        color: var(--textColor-200);
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        padding-left: 20px;
+        &::placeholder{
+            color: var(--textColor-200);
+        }
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+        option{
+            color: var(--textColor-200);
+        }
+      }
+    }
+
+    .submit{
+        background-color: var(--pink);
+        color: var(--white);
+    }
+
+    textarea {
+        resize: none;
+        color: var(--textColor);
+        border: none;
+        background-color: var(--form-bg);
+        padding: 10px 30px;
+        &::placeholder{
+            color: var(--textColor-200);
+            // padding: 10px;
+        }
+      }
+  }
+  .right {
+    min-width: 440px;
+  }
+}
+
+@include width-range(0,$desktop){
+    .contact_container{
+        flex-wrap: wrap !important;
+    }
+}
+
+@include width-range(0,$tablet){
+    .contact_container{
+      .left{
+        padding: 7px !important;
+      }
+      padding: 10px;
+        .d_field{
+          flex-wrap: wrap !important;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+@import "../../styles.scss";
+.c_form {
+  min-height: 100vh;
+  background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMIx.img");
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  backdrop-filter: blur(10px) !important;
+}
+
+.contact-form-container {
+  display: grid;
+  grid-template-rows: repeat(1, 2fr);
+  grid-template-columns: repeat(2, 2fr);
+  gap: rem(30);
+  .contact1 {
+    // padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    height: auto;
+
+    select {
+      height: rem(50);
+    }
+    span {
+      @include setDimension(rem(50), rem(50));
+      @include flex(center, center, "", 0, 0);
+      border-radius: 50%;
+      &.mail {
+        color: var(--white) !important;
+        background-color: var(--pink) !important;
+      }
+
+      &.insta {
+        color: var(--white) !important;
+        background: linear-gradient(
+          to right,
+          #f58529,
+          #f77737,
+          #d62976,
+          #962fbf
+        ) !important;
+      }
+
+      &.fb {
+        background-color: #4267b2 !important;
+      }
+      &.linkedIn {
+        background-color: #4267b2 !important;
+        color: var(--white) !important;
+      }
+      &.twitter {
+        background-color: black !important;
+        color: var(--white) !important;
+      }
+    }
+  }
+}
+
+h1.text-white {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+p.text-white {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.d-flex.justify-content-between .text-center.text-white {
+  text-align: center;
+  color: white;
+}
+
+.bg-danger.rounded-circle {
+  background-color: red;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 50px;
+  height: 50px;
+}
+
+.h5.m-0 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.btn-light {
+  background-color: white;
+}
+
+.btn-primary {
+  background-color: blue;
+}
+
+.card.bg-dark.text-white {
+  background-color: black;
+  color: white;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.form-control,
+.form-select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.btn.btn-danger {
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.d-flex .me-2 {
+  margin-right: 0.5rem;
+}
+
+a img.rounded-circle {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+@include width-range(0, $large) {
+  .contact-form-container {
+    grid-template-columns: repeat(1, 2fr);
+  }
+}
+
+@include width-range(0, $tablet) {
+    .c_form{
+        padding: 10px 7px !important;
+    }
+  .contact-form-container {
+    padding: 5px !important;
+    .text-contact {
+      display: none !important;
+    }
+
+    .form-contact {
+      width: 100% !important;
+      padding: 20px !important;
+    }                                                                                                                       
+  }
+}
