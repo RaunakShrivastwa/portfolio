@@ -28,7 +28,7 @@ const Header = ({ setTheme, theme }) => {
           <Link to="/">
             <img
               className="logo"
-              src="https://cdn-icons-png.flaticon.com/256/8904/8904881.png"
+              src="https://res.cloudinary.com/dnk5iqeup/image/upload/v1737917577/piiahegxn8kjnxfwnap6.jpg"
               alt=""
             />
           </Link>
@@ -53,13 +53,12 @@ const Header = ({ setTheme, theme }) => {
             <button className="quotes get_quotes btn custome_radius f19">
               Get Quotes
             </button>
-           
-              <Link to="/api/letswork/contact/us" className="text-light">
-               <button className="quotes hire btn custome_radius f19 ">
-                    Hire Me
-               </button>
-              </Link>
-           
+
+            <Link to="/api/letswork/contact/us" className="text-light">
+              <button className="quotes hire btn custome_radius f19 ">
+                Hire Me
+              </button>
+            </Link>
 
             <img
               className={`logo box_shadow p-1`}
