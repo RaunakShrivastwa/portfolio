@@ -376,32 +376,32 @@ Let’s collaborate to transform your raw footage into engaging and impactful vi
 
 const projects = [
   {
-    image: "/images/feedocenter.png",
+    image: "/feedocenter.png",
     name: "Feedocenter",
     url: "https://feedocenter.com",
     github: "",
     desc: "Discover new friends nearby with shared interests! Our MERN-based platform connects you to like-minded people in your area, making it easy to build genuine friendships. Join now and start connecting today!",
   },
   {
-    image: "/images/ourninjas.png",
+    image: "/ourninjas.png",
     name: "OurNinjas",
     url: "https://ninjasteam.vercel.app/",
     desc: "OurNinjas is an interactive teaching portal designed to empower learners with engaging lessons and resources. Connect, learn, and grow with a platform tailored for effective education. Start your learning journey with us today!",
   },
   {
-    image: "/images/GPT.png",
+    image: "/GPT.png",
     name: "GPT",
     url: "https://gpt-eight-beige.vercel.app/",
     desc: "Developing a conversational AI inspired by ChatGPT, designed for real-time, context-aware interactions. Aiming to provide seamless communication for diverse applications.",
   },
   {
-    image: "/images/Health.png",
+    image: "/Health.png",
     name: "Health Plus+",
     url: "https://alkaison.github.io/Health-Plus/",
     desc: "Health Plus is a comprehensive healthcare platform designed to connect users with medical services, wellness resources, and personalized health insights. Offering easy appointment booking, expert consultations, and health tracking, it empowers users to take charge of their well-being conveniently and efficiently.",
   },
   {
-    image: "/images/e.png",
+    image: "/e.png",
     name: "E-Commerce",
     url: "https://e-commerce-mansy.vercel.app/",
     desc: "An innovative e-commerce platform offering a seamless shopping experience with a wide range of products, user-friendly navigation, secure payments, and fast delivery. Designed to make online shopping convenient, reliable, and enjoyable for everyone.",
