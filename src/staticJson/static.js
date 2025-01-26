@@ -376,32 +376,37 @@ Let’s collaborate to transform your raw footage into engaging and impactful vi
 
 const projects = [
   {
-    image: "/feedocenter.png",
+    image:
+      "https://res.cloudinary.com/dnk5iqeup/image/upload/v1737916300/hniqhequowfbfsv4ur7u.png",
     name: "Feedocenter",
     url: "https://feedocenter.com",
     github: "",
     desc: "Discover new friends nearby with shared interests! Our MERN-based platform connects you to like-minded people in your area, making it easy to build genuine friendships. Join now and start connecting today!",
   },
   {
-    image: "/ourninjas.png",
+    image:
+      "https://res.cloudinary.com/dnk5iqeup/image/upload/v1737916302/c0wimjmm9b9qa7fwywv4.png",
     name: "OurNinjas",
     url: "https://ninjasteam.vercel.app/",
     desc: "OurNinjas is an interactive teaching portal designed to empower learners with engaging lessons and resources. Connect, learn, and grow with a platform tailored for effective education. Start your learning journey with us today!",
   },
   {
-    image: "/GPT.png",
+    image:
+      "https://res.cloudinary.com/dnk5iqeup/image/upload/v1737916301/qx47q7j64r0hgukw7gis.png",
     name: "GPT",
     url: "https://gpt-eight-beige.vercel.app/",
     desc: "Developing a conversational AI inspired by ChatGPT, designed for real-time, context-aware interactions. Aiming to provide seamless communication for diverse applications.",
   },
   {
-    image: "/Health.png",
+    image:
+      "https://res.cloudinary.com/dnk5iqeup/image/upload/v1737916301/wmbavqxmerqjhfwvx4ns.png",
     name: "Health Plus+",
     url: "https://alkaison.github.io/Health-Plus/",
     desc: "Health Plus is a comprehensive healthcare platform designed to connect users with medical services, wellness resources, and personalized health insights. Offering easy appointment booking, expert consultations, and health tracking, it empowers users to take charge of their well-being conveniently and efficiently.",
   },
   {
-    image: "/e.png",
+    image:
+      "https://res.cloudinary.com/dnk5iqeup/image/upload/v1737916299/vcrysfovuoiwh9lpfrah.png",
     name: "E-Commerce",
     url: "https://e-commerce-mansy.vercel.app/",
     desc: "An innovative e-commerce platform offering a seamless shopping experience with a wide range of products, user-friendly navigation, secure payments, and fast delivery. Designed to make online shopping convenient, reliable, and enjoyable for everyone.",
