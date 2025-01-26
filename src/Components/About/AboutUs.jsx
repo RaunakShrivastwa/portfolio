@@ -45,7 +45,7 @@ const AboutUs = () => {
       )}
       <div className=" py-5 p-3">
         <section className="about-section mb-5">
-          <h2 className="section-title text-center mb-4">About Let's Work</h2>
+          <h2 className="section-title text-center mb-4">About My Works</h2>
           <div className="row">
             <div className="col-lg-8 mx-auto">
               <p className="lead text-center mb-4">
@@ -55,9 +55,9 @@ const AboutUs = () => {
                 Whether you need a professional website, API integration, or
                 multimedia services like video and image editing
               </p>
-              <div className="card border-0 bg-transparent box_shadow mb-2">
+              <div className="card border-0 bg-transparent mb-2">
                 <div className="card-body why_card why_choose_lets_work">
-                  <h3 className="h4 mb-3">Why Choose Lets'work?</h3>
+                  <h3 className="h4 mb-3">Why Choose Me?</h3>
                   <WhyChhoseUs />
                 </div>
               </div>
@@ -66,7 +66,7 @@ const AboutUs = () => {
         </section>
 
         <ScrollableSection
-          title="Our Services"
+          title="My Services"
           items={services}
           renderItem={(service, index) => (
             <ServiceCard key={index} {...service} />

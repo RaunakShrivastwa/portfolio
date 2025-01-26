@@ -1,8 +1,9 @@
 import React from 'react'
+import './ServiceCard.scss';
 
 function WhyChhoseUs() {
   return (
-    <ul className="list-group list-group-flush">
+    <ul className="list-group list-group-flush box_shadow m-2">
       <li className="list-group-item">
         Comprehensive suite of digital services under one roof
       </li>

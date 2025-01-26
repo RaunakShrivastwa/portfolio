@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { GitHub, Globe, Clock, Briefcase } from "react-feather";
 import "./WorkView.scss";
 import Banner from "../../../commonComponents/Banner/Banner";
 import Footer from "../../../commonComponents/Footer/Footer";
@@ -11,7 +10,7 @@ const WorkView = () => {
   return (
     <div className="work-view overflow-auto">
       <Banner
-        image={"https://wallpapercave.com/wp/wp14232509.jpg"}
+        image={"/P.jpg"}
         title={"Our Work For Clients"}
         lead={"Empowering Your Digital Journey with Cutting-Edge Solutions"}
       />
@@ -43,17 +42,14 @@ const WorkView = () => {
             md={6}
             className="d-flex justify-content-center align-items-center"
           >
-            <div className="icon-group">
-              <Briefcase size={30} className="mr-3" />
-              <Clock size={30} />
-            </div>
+            
           </Col>
         </Row>
       </Container>
 
       {/* Projects */}
       <Container className="section">
-        <h2>Featured Projects</h2>
+        <h2 className="m-0">Featured Projects</h2>
         <Row>
           <Project />
         </Row>

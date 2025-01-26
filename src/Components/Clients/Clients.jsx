@@ -16,7 +16,7 @@ const Clients = () => {
     profile: user?.profile || "No Profile",
     userEmail: user?.userEmail || "dummy@gamil.com",
     Address: user?.userAddress || "root",
-    id: user._id
+    id: user._idzz
   }));
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Clients = () => {
 
   // Check if clients data exists and is an array
   if (!clients || !Array.isArray(clients)) {
-    return <div className="client_container">Loading...</div>;
+    return <div className="client_container vh-100 d-flex justify-content-center align-items-center text-warning fs-2 fw-bold">Loading...</div>;
   }
 
   return (

@@ -16,7 +16,9 @@ function About() {
             </h4>
             {about?.summary}
           </p>
-          <button className="get_in_touch_btn btn">Get In Touch</button>
+          <a href="#contact">
+            <button className="get_in_touch_btn btn">Get In Touch</button>
+          </a>
         </div>
       </div>
     );

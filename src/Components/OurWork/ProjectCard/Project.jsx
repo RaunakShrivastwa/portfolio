@@ -2,6 +2,7 @@ import React from "react";
 import "./Project.scss";
 import { Eye, GitHub} from "react-feather";
 import { projects } from "../../../staticJson/static";
+import { EyeClosed } from "lucide-react";
 
 const Project = () => {
   return (
@@ -20,18 +21,19 @@ const Project = () => {
               />
             </div>
             <div class="project_disc p-1 f22  d-flex flex-column justify-content-center align-items-center">
-              <strong className="text p-2">{project?.name}</strong>
+              <strong className="text text-light p-2">{project?.name}</strong>
               <div className="header_items_container gap-2  p-2 w-100 h-100 d-flex justify-content-between align-items-center">
-                <span className="icons box_shadow github bg-warning">
-                  <GitHub className="i24" />
+                <span className="icons shadow border border-light github">
+                  <GitHub className="i24 text-light" />
                 </span>
-                <p className="flex-grow-1 f9">
-                  kjldsjlfksjfkljdsklflkdsfkldskfjdskfjlkdskl
-                </p>
+                <p className="flex-grow-1 text-light f12">{project?.desc}</p>
               </div>
             </div>
             <div class="span1 d-flex justify-content-center text-dark">
-              <Eye className="mt-3" />
+              <a className="eye_con" href={project?.url}>
+                <Eye className="mt-3 text-light open" />
+                <EyeClosed className="closed text-light d-none mt-3" />
+              </a>
             </div>
           </div>
         ))}

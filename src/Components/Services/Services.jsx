@@ -98,7 +98,7 @@ const Services = () => {
         </Row>
 
         {/* Additional Information */}
-        <Row>
+        <Row className="bg-transparent">
           <Col>
             <h3>Why Choose Us?</h3>
             <WhyChhoseUs />

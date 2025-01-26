@@ -1,6 +1,5 @@
 import {
   Book,
-  Code,
   Database,
   Film,
   Globe,
@@ -21,8 +20,7 @@ import {
 const aboutMe = {
   heading: "Why",
   title: "Choose Me as Your Web Development Partner",
-  summary:
-    `As i graduate with expertise in modern web technologies, I bring a strong technical foundation and innovative 
+  summary: `I bring a strong technical foundation and innovative 
     approach to every project. I specialize in delivering tailored solutions using cutting-edge tools like the MERN stack, 
     ensuring your website is scalable, efficient, and aligned with your goals. With a commitment to creating seamless user 
     experiences and on-time delivery, I focus on turning your ideas into impactful digital solutions. My passion for excellence 
@@ -170,7 +168,8 @@ const services = [
 const teamMembers = [
   {
     name: "Shubham Shrivastwa",
-    role: "Full Stack Developer",
+    role: "Fullstack Developer",
+    experience: "4 Years",
     avtar:
       "https://media.licdn.com/dms/image/v2/D4D03AQFs9JSnLC_o2g/profile-displayphoto-shrink_400_400/B4DZRyjYTfHYAk-/0/1737088670945?e=1742428800&v=beta&t=27DeZfqzJGHpy07AhS6MbJa6Ph-_hbK3PwEhoHkedbQ",
     background:
@@ -202,7 +201,8 @@ const teamMembers = [
 
   {
     name: "Abhijeet Kumar",
-    role: "Full Stack Developer",
+    role: "Fullstack Developer",
+    experience: "3 Years",
     avtar:
       "https://media.licdn.com/dms/image/v2/D4D03AQFQ2CGeYJT4_A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1687675824971?e=1742428800&v=beta&t=xEf89Je-ojZ_jJEgb2YmygCLvoFbkS5W6ATKXMTphPk",
     background:
@@ -235,6 +235,7 @@ const teamMembers = [
   {
     name: "Satyam Kumar",
     role: "Frontend Developer",
+    experience: "4 Years",
     avtar:
       "https://media.licdn.com/dms/image/v2/C5603AQFjGiY5wbXSqQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1642685318968?e=1742428800&v=beta&t=gLciLv8PS4IYmzNDOcIlPVNjNeME5YBZ1E9bPUOgX28",
     background: "B.tech Computer Science",
@@ -378,7 +379,7 @@ const projects = [
     image: "/images/feedocenter.png",
     name: "Feedocenter",
     url: "https://feedocenter.com",
-    github:"",
+    github: "",
     desc: "Discover new friends nearby with shared interests! Our MERN-based platform connects you to like-minded people in your area, making it easy to build genuine friendships. Join now and start connecting today!",
   },
   {
@@ -387,9 +388,34 @@ const projects = [
     url: "https://ninjasteam.vercel.app/",
     desc: "OurNinjas is an interactive teaching portal designed to empower learners with engaging lessons and resources. Connect, learn, and grow with a platform tailored for effective education. Start your learning journey with us today!",
   },
+  {
+    image: "/images/GPT.png",
+    name: "GPT",
+    url: "https://gpt-eight-beige.vercel.app/",
+    desc: "Developing a conversational AI inspired by ChatGPT, designed for real-time, context-aware interactions. Aiming to provide seamless communication for diverse applications.",
+  },
+  {
+    image: "/images/Health.png",
+    name: "Health Plus+",
+    url: "https://alkaison.github.io/Health-Plus/",
+    desc: "Health Plus is a comprehensive healthcare platform designed to connect users with medical services, wellness resources, and personalized health insights. Offering easy appointment booking, expert consultations, and health tracking, it empowers users to take charge of their well-being conveniently and efficiently.",
+  },
+  {
+    image: "/images/e.png",
+    name: "E-Commerce",
+    url: "https://e-commerce-mansy.vercel.app/",
+    desc: "An innovative e-commerce platform offering a seamless shopping experience with a wide range of products, user-friendly navigation, secure payments, and fast delivery. Designed to make online shopping convenient, reliable, and enjoyable for everyone.",
+  },
 ];
 
-
-
 // eslint-disable-next-line import/no-anonymous-default-export
-export { aboutMe, about, served, blogs, services, teamMembers, service ,projects};
+export {
+  aboutMe,
+  about,
+  served,
+  blogs,
+  services,
+  teamMembers,
+  service,
+  projects,
+};

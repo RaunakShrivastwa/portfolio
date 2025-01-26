@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Send, Shield, Award, Instagram, Linkedin, Facebook, Twitter,Mail } from "react-feather";
 import "./ContactWrapper.scss"; // Assuming the extracted CSS is in 'YourStyles.css'
-import Footer from "../../commonComponents/Footer/Footer";
+import emailjs from "emailjs-com";
 
 const ContactWrapper = () => {
   const [formData, setFormData] = useState({
@@ -26,8 +26,39 @@ const ContactWrapper = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Here you would typically send the data to your backend
+   emailjs
+     .send(
+       "service_jbf2uzm", // Replace with your Email.js Service ID
+       "template_9kz9cfy", // Replace with your Email.js Template ID
+     {
+          fullName: formData.fullName,
+          email: formData.email,
+          phoneNumber: formData.phoneNumber,
+          projectType: formData.projectType,
+          projectDescription: formData.projectDescription,
+        },
+       "TDcAKqK6acpC-edRR" // Replace with your Email.js Public Key
+     )
+     .then(
+       (response) => {
+         console.log(
+           "Email sent successfully!",
+           response.status,
+           response.text
+         );
+         setFormData({
+           fullName: "",
+           email: "",
+           phone: "",
+           service: "",
+           projectDescription: "",
+         });
+       },
+       (error) => {
+         console.error("Failed to send email:", error);
+         alert("Failed to send email. Please try again later.");
+       }
+     );
   };
 
   return (
@@ -61,22 +92,15 @@ const ContactWrapper = () => {
           </div>
 
           <div className="d-flex justify-content-start mb-4">
-            <button className="btn btn-light me-2 d-flex align-items-center">
+            <a href="https://wa.me/qr/X7KJFZCW5HE6C1">
               <img
-                src="/api/placeholder/20/20"
+                width={"50px"}
+                height={"50px"}
+                src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png"
                 alt="WhatsApp"
                 className="me-2"
               />{" "}
-              Whatsapp
-            </button>
-            <button className="btn btn-primary d-flex align-items-center">
-              <img
-                src="/api/placeholder/20/20"
-                alt="Telegram"
-                className="me-2"
-              />{" "}
-              Telegram
-            </button>
+            </a>
           </div>
 
           <div className="row">
@@ -106,12 +130,16 @@ const ContactWrapper = () => {
             </div>
 
             <div className="mt-4 text-light">
-              <h5 className="mb-3">Follow Us On Our Social Networks Accounts.</h5>
+              <h5 className="mb-3">
+                Follow Us On Our Social Networks Accounts.
+              </h5>
 
               <div className="d-flex justify-content-around">
                 {sso.map((social, index) => (
                   <a key={index} href="#" className="me-2">
-                    <span className={`${social?.class}`}>{social?.profile}</span>
+                    <span className={`${social?.class}`}>
+                      {social?.profile}
+                    </span>
                   </a>
                 ))}
               </div>
@@ -187,7 +215,7 @@ const ContactWrapper = () => {
           </form>
         </div>
       </div>
-    </div>                                          
+    </div>
   );
 };
 
