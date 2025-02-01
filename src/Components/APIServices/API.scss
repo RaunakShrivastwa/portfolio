@@ -1,0 +1,75 @@
+@import "../../styles.scss";
+.our-api-services {
+  color: var(--textColor);
+  background: var(--bg-gradient);
+  background: var(--bg);
+  h2 {
+    color: var(--pink);
+  }
+
+  .api_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 2fr);
+    gap: rem(30);
+
+    .items {
+      height: rem(400);
+      @include flex("", "", column);
+
+      .api {
+        flex-grow: 1;
+        background-color: lightblue;
+        min-height: rem(292);
+        overflow-y: auto;
+        position: relative;
+        z-index: 1;
+        a {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background-color: rgb(27, 22, 22);
+          color: white;
+          border-radius: 50%;
+          @include flex(center, center);
+          z-index: 2;
+          bottom: 50%;
+          left: 50%;
+          display: none;
+        }
+      }
+
+      .tech_stack,
+      .desc {
+        // height: 50px;
+        @include flex(center, center);
+        text-align: justify;
+      }
+
+      &:hover {
+        img {
+          opacity: 0.5;
+        }
+        a {
+          display: flex !important;
+        }
+      }
+
+      .desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limit to 2 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0px rem(16);
+      }
+    }
+  }
+}
+
+@media (max-width:1022px){
+  .our-api-services .api_container{
+    grid-template-columns: repeat(1,2fr);
+  }
+}

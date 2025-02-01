@@ -1,9 +1,61 @@
-import React from 'react'
+import React from "react";
+import { Container} from "react-bootstrap";
+import "./API.scss";
+import Banner from "../../commonComponents/Banner/Banner";
+import {apiService} from '../../staticJson/static';
+import Footer from "../../commonComponents/Footer/Footer";
+
+import { Eye } from "react-feather";
 
 const API = () => {
-  return (
-    <div>API</div>
-  )
-}
+  const technologies = [
+    "JavaScript",
+    "React",
+    "Spring Boot",
+    "Node.js",
+    "RESTful APIs",
+    "SQL",
+    "NoSQL",
+    "Adobe Premiere Pro",
+  ];
 
-export default API
+  return (
+    <div className="our-api-services vh-100 overflow-y-auto">
+      {/* Main Banner */}
+
+      <Banner
+        image={"/serv.jpg"}
+        title={"Welcome to Let's Work"}
+        lead={"Empowering Your Digital Journey with Cutting-Edge Solutions"}
+      />
+
+      {/* Main Content */}
+      <Container>
+        <h1 className="text-center m-3">API Services</h1>
+        <div className="api_container mb-5">
+          {apiService.map((data) => (
+            <div className="items custome_radius box_shadow m-1">
+              <div className="api">
+                <img
+                  className="w-100 h-100"
+                  src={data.image}
+                  alt=""
+                />
+                <a href={data.url}>
+                  <Eye className="text-light" />
+                </a>
+              </div>
+              <h3 className="tech_stack">{data.title}</h3>
+              <div className="desc mb-4 px-3">
+                {data.desc}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Container>
+      <Footer />
+    </div>
+  );
+};
+
+export default API;

@@ -413,6 +413,23 @@ const projects = [
   },
 ];
 
+const apiService = [
+  {
+    title: "OurNinjas API Services",
+    desc: "I have developed APIs for a teaching platform, enabling course management, user authentication, and content delivery. These APIs ensure a seamless learning experience with secure access and efficient data handling.",
+    image:
+      "https://res.cloudinary.com/dnk5iqeup/image/upload/v1738440492/zhpdbwkau281quwjccz2.png",
+    url: "https://documenter.getpostman.com/view/39299456/2sAYX3qibR",
+  },
+  {
+    title: "E-Commerce API",
+    desc: "APIs for an e-commerce platform, enabling seamless product management, user authentication, and order processing. These APIs ensure secure transactions, efficient inventory handling, and a smooth shopping experience",
+    image:
+      "https://res.cloudinary.com/dnk5iqeup/image/upload/v1738444281/yilaug3fiwpyuuimlkis.png",
+    url: "https://documenter.getpostman.com/view/39299456/2sAYX3qibR",
+  },
+];
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export {
   aboutMe,
@@ -423,4 +440,5 @@ export {
   teamMembers,
   service,
   projects,
+  apiService,
 };
