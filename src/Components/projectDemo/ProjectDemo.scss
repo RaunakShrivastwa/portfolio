@@ -1,5 +1,5 @@
 @import "../../styles.scss";
-.our-api-services {
+.our-project-services {
   color: var(--textColor);
   background: var(--bg-gradient);
   background: var(--bg);
@@ -7,7 +7,7 @@
     color: var(--pink);
   }
 
-  .api_container {
+  .project_container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -18,12 +18,13 @@
       height: rem(400);
       @include flex("", "", column);
 
-      .api {
+      .project {
         flex-grow: 1;
-        background-color: lightblue;
+        background-color: black;
         min-height: rem(292);
         overflow-y: auto;
         position: relative;
+        padding: 0 !important;
         z-index: 1;
         a {
           position: absolute;
@@ -69,7 +70,7 @@
 }
 
 @media (max-width:1022px){
-  .our-api-services .api_container{
+  .our-project-services .project_container{
     grid-template-columns: repeat(1,2fr);
   }
 }

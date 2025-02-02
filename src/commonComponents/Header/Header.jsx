@@ -148,11 +148,15 @@ const Header = ({ setTheme, theme }) => {
             <Link className="span signup me-5" to={"/api/letswork/contact/us"}>
               Contacts
             </Link>
-            <Link to={'/api/api/services'} className="span signup me-5">API Services</Link>
+            <Link to={"/api/api/services"} className="span signup me-5">
+              API Services
+            </Link>
+            <Link to={"/api/projects/demo"} className="span signup me-5">
+              Projects Demo
+            </Link>
             <Link className="span signup me-5">Articles</Link>
 
             <Link className="span signup me-5">Session</Link>
-            <Link className="span signup me-5 d-none">Free API</Link>
             <Link className="span signup me-5 d-none">Free API</Link>
             <Link to="/api/letswork/dashboard" className="span signup me-5">
               Dashboard

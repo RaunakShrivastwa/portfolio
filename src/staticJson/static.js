@@ -426,7 +426,25 @@ const apiService = [
     desc: "APIs for an e-commerce platform, enabling seamless product management, user authentication, and order processing. These APIs ensure secure transactions, efficient inventory handling, and a smooth shopping experience",
     image:
       "https://res.cloudinary.com/dnk5iqeup/image/upload/v1738444281/yilaug3fiwpyuuimlkis.png",
-    url: "https://documenter.getpostman.com/view/39299456/2sAYX3qibR",
+    url: "https://documenter.getpostman.com/view/20783544/2sAYX3r3Pn",
+  },
+];
+
+const demo = [
+  {
+    title: "Telegram Bot",
+    desc: "I created a Telegram bot using Node.js that allows users to chat and interact seamlessly. The bot can handle real-time messages, respond to commands, and provide automated replies based on user input. It integrates with Telegram’s Bot API and supports features like text processing, custom ",
+    url: "https://res.cloudinary.com/dnk5iqeup/video/upload/v1738524745/laq8bizmh3tpz8nrgrmm.mp4",
+  },
+  {
+    title: "Ourninjas",
+    desc: "I created a Telegram bot using Node.js that allows users to chat and interact seamlessly. The bot can handle real-time messages, respond to commands, and provide automated replies based on user input. It integrates with Telegram’s Bot API and supports features like text processing, custom ",
+    url: "https://res.cloudinary.com/dnk5iqeup/video/upload/v1738524745/laq8bizmh3tpz8nrgrmm.mp4",
+  },
+  {
+    title: "Telegram Bot",
+    desc: "I created a Telegram bot using Node.js that allows users to chat and interact seamlessly. The bot can handle real-time messages, respond to commands, and provide automated replies based on user input. It integrates with Telegram’s Bot API and supports features like text processing, custom ",
+    url: "https://res.cloudinary.com/dnk5iqeup/video/upload/v1738524745/laq8bizmh3tpz8nrgrmm.mp4",
   },
 ];
 
@@ -441,4 +459,5 @@ export {
   service,
   projects,
   apiService,
+  demo
 };

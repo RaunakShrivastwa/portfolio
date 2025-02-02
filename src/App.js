@@ -23,6 +23,7 @@ import Clients from "./Components/Clients/Clients.jsx";
 import {populateUser} from './features/serverSlice.js';
 import { useDispatch } from "react-redux";
 import API from "./Components/APIServices/API.jsx";
+import ProjectDemo from "./Components/projectDemo/ProjectDemo.jsx";
 
 
 
@@ -57,6 +58,7 @@ const Layout = ({ setTheme, theme }) => {
         <Route exact path="/api/letswork/contact/us" element={<Contact />} />
         <Route exact path="/api/letswork/clients" element={<Clients />} />
         <Route exact path="/api/api/services" element={<API />} />
+        <Route exact path="/api/projects/demo" element={<ProjectDemo />} />
         <Route
           exact
           path="/api/letswork/register/account"

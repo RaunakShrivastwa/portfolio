@@ -25,8 +25,10 @@ const API = () => {
 
       <Banner
         image={"/serv.jpg"}
-        title={"Welcome to Let's Work"}
-        lead={"Empowering Your Digital Journey with Cutting-Edge Solutions"}
+        title={"Robust API Services for Seamless Integration"}
+        lead={
+          "Explore our powerful API services designed to enhance your applications with secure, fast, and reliable data access. Empower your business with seamless integration and unmatched performance."
+        }
       />
 
       {/* Main Content */}
@@ -36,19 +38,13 @@ const API = () => {
           {apiService.map((data) => (
             <div className="items custome_radius box_shadow m-1">
               <div className="api">
-                <img
-                  className="w-100 h-100"
-                  src={data.image}
-                  alt=""
-                />
+                <img className="w-100 h-100" src={data.image} alt="" />
                 <a href={data.url}>
                   <Eye className="text-light" />
                 </a>
               </div>
               <h3 className="tech_stack">{data.title}</h3>
-              <div className="desc mb-4 px-3">
-                {data.desc}
-              </div>
+              <div className="desc mb-4 px-3">{data.desc}</div>
             </div>
           ))}
         </div>
