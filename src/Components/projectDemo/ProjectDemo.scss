@@ -78,3 +78,9 @@
     grid-template-columns: repeat(1,2fr);
   }
 }
+
+@media (max-width:768px){
+  .our-project-services .parent_demo{
+    padding: 0px 10px;
+  }
+}
