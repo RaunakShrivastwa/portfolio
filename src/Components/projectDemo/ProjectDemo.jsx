@@ -21,7 +21,7 @@ const ProjectDemo = () => {
       />
 
       {/* Main Content */}
-      <Container>
+      <div className="parent_demo">
         <h1 className="text-center m-3">project Demo</h1>
         <div className="project_container mb-5">
           {demo.map((data) => (
@@ -35,7 +35,7 @@ const ProjectDemo = () => {
             </div>
           ))}
         </div>
-      </Container>
+      </div>
       <Footer />
     </div>
   );

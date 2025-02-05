@@ -417,16 +417,26 @@ const apiService = [
   {
     title: "OurNinjas API Services",
     desc: "I have developed APIs for a teaching platform, enabling course management, user authentication, and content delivery. These APIs ensure a seamless learning experience with secure access and efficient data handling.",
-    image:
-      "https://res.cloudinary.com/dnk5iqeup/image/upload/v1738440492/zhpdbwkau281quwjccz2.png",
+    image: "https://www.matillion.com/uploads/cards/Blog-API.png",
     url: "https://documenter.getpostman.com/view/39299456/2sAYX3qibR",
   },
   {
     title: "E-Commerce API",
     desc: "APIs for an e-commerce platform, enabling seamless product management, user authentication, and order processing. These APIs ensure secure transactions, efficient inventory handling, and a smooth shopping experience",
-    image:
-      "https://res.cloudinary.com/dnk5iqeup/image/upload/v1738444281/yilaug3fiwpyuuimlkis.png",
+    image: "https://www.matillion.com/uploads/cards/Blog-API.png",
     url: "https://documenter.getpostman.com/view/20783544/2sAYX3r3Pn",
+  },
+  {
+    title: "Banking API",
+    desc: "I have developed APIs for a banking platform, enabling secure transactions, user authentication, and account management. These APIs ensure fast, reliable, and encrypted financial operations.",
+    image: "https://www.matillion.com/uploads/cards/Blog-API.png",
+    url: "https://documenter.getpostman.com/view/20783544/2s9YeK4q5Q",
+  },
+  {
+    title: "Let's Work Api",
+    desc: "I have developed APIs for a project management platform, enabling task tracking, user collaboration, and workflow automation. These APIs ensure efficient project handling with secure access and real-time updates.",
+    image: "https://www.matillion.com/uploads/cards/Blog-API.png",
+    url: "https://documenter.getpostman.com/view/20783544/2sAYX3sPmr",
   },
 ];
 
@@ -436,15 +446,23 @@ const demo = [
     desc: "I created a Telegram bot using Node.js that allows users to chat and interact seamlessly. The bot can handle real-time messages, respond to commands, and provide automated replies based on user input. It integrates with Telegram’s Bot API and supports features like text processing, custom ",
     url: "https://res.cloudinary.com/dnk5iqeup/video/upload/v1738524745/laq8bizmh3tpz8nrgrmm.mp4",
   },
+
   {
-    title: "Ourninjas",
-    desc: "I created a Telegram bot using Node.js that allows users to chat and interact seamlessly. The bot can handle real-time messages, respond to commands, and provide automated replies based on user input. It integrates with Telegram’s Bot API and supports features like text processing, custom ",
-    url: "https://res.cloudinary.com/dnk5iqeup/video/upload/v1738524745/laq8bizmh3tpz8nrgrmm.mp4",
+    title: "Songify",
+    desc: "I am building a music streaming platform like Spotify, allowing users to stream and organize their favorite tracks. It includes features like playlists, user authentication, and a smooth listening experience.",
+    url: "https://res.cloudinary.com/dnk5iqeup/video/upload/v1738781293/n5gxicpffrki3erva7ui.mp4",
   },
+
   {
-    title: "Telegram Bot",
-    desc: "I created a Telegram bot using Node.js that allows users to chat and interact seamlessly. The bot can handle real-time messages, respond to commands, and provide automated replies based on user input. It integrates with Telegram’s Bot API and supports features like text processing, custom ",
-    url: "https://res.cloudinary.com/dnk5iqeup/video/upload/v1738524745/laq8bizmh3tpz8nrgrmm.mp4",
+    title: "SaveLife",
+    desc: "I am developing a health app that enables users to track fitness, monitor health metrics, and access personalized wellness plans. It includes features like activity tracking, diet management, and real-time health insights.",
+    url: "https://res.cloudinary.com/dnk5iqeup/video/upload/v1738781289/xrnkgvgkjnwaffxlx8p7.mp4",
+  },
+
+  {
+    title: "Navbar",
+    desc: "Animated Navbar with responsive",
+    url: "https://res.cloudinary.com/dnk5iqeup/video/upload/v1738781217/azowerslk1zohsuom0fk.mp4",
   },
 ];
 
